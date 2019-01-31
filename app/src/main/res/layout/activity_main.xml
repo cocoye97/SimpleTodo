@@ -6,28 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
         android:id="@+id/etNewItem"
         android:layout_width="wrap_content"
-        android:layout_height="47dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="672dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginRight="121dp"
-        android:layout_marginBottom="12dp"
-        android:text="@string/textview"
-        tools:text="Add a new item..." />
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Add a new item here"
+        android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/btnAddItem"
+        android:id="@+id/btnAdditem"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7dp"
+        android:onClick="onAddItem"
+        android:text="Add" />
+
+    <ListView
+        android:id="@+id/lvitems"
+        android:layout_width="399dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
@@ -35,27 +43,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="312dp"
-        android:layout_marginLeft="312dp"
-        android:layout_marginTop="670dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginBottom="13dp"
-        android:onClick="onAddItem"
-        android:text="@string/add" />
-
-    <ListView
-        android:id="@+id/lvitems"
-        android:layout_width="match_parent"
-        android:layout_height="659dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"

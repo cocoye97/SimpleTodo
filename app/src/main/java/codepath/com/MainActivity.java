@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         lvItems = (ListView) findViewById(R.id.lvitems);
         lvItems.setAdapter(itemsAdapter);
 
-
+        //items.add("FIRST ITEM");
+        //items.add("SECOND ITEM");
         setupListViewListener();
     }
 
